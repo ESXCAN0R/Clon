@@ -41,7 +41,16 @@ header .menuderecha a img{
     display: inline-block;
     background-image: url(./assets/dots-logo.svg);
     height: 24px;
-    width: 24px;}
+    width: 24px;
+}
+
+.lupa-buscador{
+    display: inline-block;
+    background-image: url(./assets/logo-lupa.svg);
+    height: 32px;
+    width: 32px;
+
+}
 
 main {
     height: calc(100% - 60px);
@@ -67,10 +76,24 @@ main .contenedor figure img{
     height: 100%;
 }
 
+main .contenedor .buscador{
+    display: flex;
+    height: 40px;
+    width: 450px;
+    background-color: aquamarine;
+    padding: 8px;
+}
+
+main .contenedor .buscador input{
+    width: 100%;    
+}
+
+
 main .contenedor .botonera-buscador{
     display: flex;
     gap: 12px;
 }
+
 
 main .contenedor .botonera-buscador button{
     border: none;
@@ -80,9 +103,12 @@ main .contenedor .botonera-buscador button{
     border-radius: 4px;    
 }
 
+
+   
+
 main .contenedor p {
     color: whitesmoke;
     font-size: small;
-   
+    
 }
-
+ 
