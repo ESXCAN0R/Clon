@@ -67,8 +67,22 @@ main .contenedor figure img{
     height: 100%;
 }
 
+main .contenedor .botonera-buscador{
+    display: flex;
+    gap: 12px;
+}
+
+main .contenedor .botonera-buscador button{
+    border: none;
+    background-color: #303134;
+    color: whitesmoke;
+    padding: 12px;
+    border-radius: 4px;    
+}
+
 main .contenedor p {
     color: whitesmoke;
-
+    font-size: small;
+   
 }
 
