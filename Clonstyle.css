@@ -21,7 +21,7 @@ padding: 0 18px;
 
 header .menuderecha { 
 display: flex;
-gap: 12px;
+gap: 19px;
 align-items: center;
 /*background-color: indigo;*/
 }
@@ -29,6 +29,7 @@ align-items: center;
 header .menuderecha a { 
 text-decoration: none;
 color: whitesmoke;
+font-size: small;
 }
 
 header .menuderecha a img{
@@ -46,14 +47,32 @@ header .menuderecha a img{
 
 .lupa-buscador{
     display: inline-block;
+    background: no-repeat;
     background-image: url(./assets/logo-lupa.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.buscador-microfono{
+    display: inline-block;
+    background: no-repeat;
+    background-image: url(./assets/logo-micro.svg);
     height: 32px;
     width: 32px;
+}
+
+.buscador-camara{
+    display: inline-block;
+    background-image: url(./assets/logo-camara.svg);
+    height: 32px;
+    width: 32px;
+    background-size: cover;
 
 }
 
+
 main {
-    height: calc(100% - 60px);
+    height: calc(100% - 60px - 90px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,21 +96,28 @@ main .contenedor figure img{
 }
 
 main .contenedor .buscador{
+    gap: 8px;
+    align-items: center;
     display: flex;
     height: 40px;
-    width: 450px;
-    background-color: aquamarine;
-    padding: 8px;
+    width: 460px;
+    padding: 8px 12px;
+    border: 1px solid gray; 
+    border-radius: 24px;
 }
 
 main .contenedor .buscador input{
-    width: 100%;    
+    width: 100%;
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+        
 }
 
 
 main .contenedor .botonera-buscador{
     display: flex;
-    gap: 12px;
+    gap: 10px;
 }
 
 
@@ -100,15 +126,36 @@ main .contenedor .botonera-buscador button{
     background-color: #303134;
     color: whitesmoke;
     padding: 12px;
-    border-radius: 4px;    
+    border-radius: 4px;
 }
 
+footer{
+    background: rgb(17, 17, 17);
+    height: 90px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
 
-   
-
-main .contenedor p {
+footer section{
+    display: flex;
+    align-items: center;
+    height: 50%;
     color: whitesmoke;
-    font-size: small;
-    
 }
- 
+
+footer section hr .linea {
+    background-color: turquoise;
+}
+
+footer section .Info{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section .Info div a{
+    display: flex;
+    gap: 10px;
+}
+
