@@ -132,30 +132,36 @@ main .contenedor .botonera-buscador button{
 footer{
     background: rgb(17, 17, 17);
     height: 90px;
-    padding: 0 30px;
+    padding: 0 0px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
 }
 
 footer section{
+    /*colombia*/
+    font-size: medium;
+    padding: 23px;
     display: flex;
     align-items: center;
     height: 50%;
-    color: whitesmoke;
+    color: #9aa0a6
 }
 
-footer section hr .linea {
-    background-color: turquoise;
-}
-
-footer section .Info{
+.Info{
+    border-top: 1px solid #9aa0a6;
+    margin: 0px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
+        
 }
 
-footer section .Info div a{
-    display: flex;
-    gap: 10px;
-}
+ footer section.info div.der a{
+    color: whitesmoke;
+    text-decoration: none;
+
+ }
+    
+
 
